@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a9fb8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0b3c49;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Gota de agua -->
+  <path d="M 50 10 
+           C 50 10, 30 35, 30 55 
+           C 30 70, 38 85, 50 85 
+           C 62 85, 70 70, 70 55 
+           C 70 35, 50 10, 50 10 Z" 
+        fill="url(#waterGradient)" 
+        stroke="#0b3c49" 
+        stroke-width="2"/>
+  
+  <!-- Brillo en la gota -->
+  <ellipse cx="45" cy="40" rx="8" ry="12" fill="white" opacity="0.4"/>
+</svg>
