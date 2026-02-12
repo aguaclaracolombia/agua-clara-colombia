@@ -55,7 +55,7 @@
   </section>
 
   <section>
-    <h2>🗺️ Municipios disponibles</h2>
+    <h2>🗺️ Departamentos con municipios disponibles</h2>
     
     <div class="tarjeta tarjeta-info" style="text-align: center; margin-bottom: 1.5rem;">
       <p style="font-size: 1.05rem; margin-bottom: 0.8rem;">
@@ -71,12 +71,15 @@
     
     <div class="tarjeta">
       <h3 style="margin-top: 0;">
-        <a href="guarne.html">Guarne, Antioquia</a>
+        <a href="antioquia/guarne/indexGuarne.html">Guarne, Antioquia</a>
+        <span class="etiqueta etiqueta-sin-riesgo" style="margin-left: 0.5rem;">IRCA 0.5%</span>
         <span class="estado">en construcción</span>
       </h3>
-      <p style="margin-bottom: 0;">
-        Datos históricos de IRCA (2011-2021) y certificación sanitaria oficial.
-        Información en proceso de actualización.
+      <p style="margin-bottom: 0.5rem;">
+        <strong>IRCA 2024:</strong> General 0.5%, Urbano 0.8%, Rural 0.2% — Todos clasificados como "Sin riesgo"
+      </p>
+      <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--color-texto-suave);">
+        Incluye datos históricos 2007-2024, información del prestador urbano y 21 acueductos veredales. Última actualización: Enero 2026.
       </p>
     </div>
     
@@ -89,15 +92,52 @@
   </section>
 
   <section>
+    <h2>📖 Marco Legal en Colombia</h2>
+    
+    <div class="tarjeta">
+      <p>La calidad del agua para consumo humano en Colombia está regulada por:</p>
+      
+      <ul>
+        <li><strong><a href="https://www.minsalud.gov.co/sites/rid/Lists/BibliotecaDigital/RIDE/DE/DIJ/Decreto-1575-de-2007.pdf" target="_blank">Decreto 1575 de 2007</a>:</strong> Establece el Sistema para la Protección y Control de la Calidad del Agua para Consumo Humano</li>
+        <li><strong><a href="https://www.minsalud.gov.co/Normatividad_Nuevo/Resoluci%C3%B3n%202115%20de%202007.pdf" target="_blank">Resolución 2115 de 2007</a>:</strong> Define las características, instrumentos básicos y frecuencias del sistema de control y vigilancia</li>
+      </ul>
+      
+      <details style="margin-top: 1rem;">
+        <summary style="cursor: pointer; color: var(--color-acento); font-weight: 500; padding: 0.5rem 0;">
+          📊 Clasificación oficial de niveles de riesgo según IRCA
+        </summary>
+        <div style="margin-top: 1rem; padding: 1rem; background: var(--color-fondo-secundario); border-radius: var(--radio-borde);">
+          <p style="margin-bottom: 0.5rem;">Según la Resolución 2115 de 2007, el IRCA clasifica el agua así:</p>
+          <ul style="margin-bottom: 0;">
+            <li><strong>0 - 5%:</strong> Sin riesgo — Agua apta para consumo humano ✓</li>
+            <li><strong>5.1 - 14%:</strong> Riesgo bajo — Agua no apta, susceptible de mejoramiento</li>
+            <li><strong>14.1 - 35%:</strong> Riesgo medio — Agua no apta, gestión directa requerida</li>
+            <li><strong>35.1 - 80%:</strong> Riesgo alto — Agua no apta, gestión urgente</li>
+            <li><strong>80.1 - 100%:</strong> Inviable sanitariamente — Acción inmediata obligatoria</li>
+          </ul>
+        </div>
+      </details>
+
+      <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem; color: var(--color-texto-suave);">
+        Estos decretos establecen los valores máximos aceptables para parámetros físicos, químicos y microbiológicos, así como las responsabilidades de prestadores, autoridades sanitarias y usuarios.
+      </p>
+    </div>
+  </section>
+
+  <section>
     <h2>ℹ️ Sobre este proyecto</h2>
     
     <div class="tarjeta tarjeta-info">
       <h3 style="margin-top: 0; color: #1e40af;">Qué hace Agua Clara Colombia</h3>
       <ul style="margin-bottom: 0;">
-        <li>Recopila información pública sobre calidad del agua</li>
+        <li>Recopila información pública de <strong>datos.gov.co</strong> y entidades oficiales</li>
         <li>La organiza de forma clara y accesible</li>
+        <li>Analiza los datos para identificar patrones y tendencias</li>
+        <li>Genera metadata y análisis derivados de información oficial</li>
         <li>Traduce documentos técnicos a lenguaje comprensible</li>
+        <li>Contextualiza los datos con el marco normativo vigente</li>
         <li>Indica explícitamente qué datos están disponibles y cuáles no</li>
+        <li>Facilita el acceso ciudadano a información que ya es pública pero está dispersa</li>
       </ul>
     </div>
     
@@ -105,9 +145,10 @@
       <h3 style="margin-top: 0; color: #92400e;">Qué NO hace este proyecto</h3>
       <ul style="margin-bottom: 0;">
         <li>No realiza mediciones propias del agua</li>
-        <li>No interpreta resultados clínicos</li>
+        <li>No interpreta resultados clínicos ni médicos</li>
         <li>No sustituye a las autoridades sanitarias</li>
         <li>No emite diagnósticos ni recomendaciones médicas</li>
+        <li>No genera datos primarios - trabaja con información oficial existente</li>
       </ul>
     </div>
   </section>
@@ -116,10 +157,12 @@
     <h2>🤝 Principios del proyecto</h2>
     
     <ul>
-      <li><strong>Transparencia:</strong> Todas las fuentes son citadas y verificables</li>
-      <li><strong>Claridad:</strong> La información se presenta en lenguaje accesible</li>
-      <li><strong>Rigor:</strong> Solo se presenta información oficial documentada</li>
+      <li><strong>Transparencia:</strong> Todas las fuentes son citadas, verificables y de origen oficial (INS, datos.gov.co, prestadores)</li>
+      <li><strong>Claridad:</strong> La información se presenta en lenguaje accesible sin sacrificar precisión técnica</li>
+      <li><strong>Rigor:</strong> Solo se presenta información oficial documentada y verificable</li>
       <li><strong>Honestidad:</strong> Los vacíos de información se indican claramente</li>
+      <li><strong>Actualización:</strong> Los datos se actualizan cuando nuevas fuentes oficiales están disponibles</li>
+      <li><strong>Contexto educativo:</strong> Se explica qué significan los valores y cómo interpretarlos según la normativa</li>
     </ul>
     
     <p class="destacado">
@@ -128,6 +171,32 @@
       La ausencia de información no significa que el agua sea segura o insegura,
       simplemente que ese dato no se encuentra en los registros públicos consultados.
     </p>
+  </section>
+
+  <section>
+    <h2>🎯 ¿Por qué existe este proyecto?</h2>
+    
+    <div class="tarjeta">
+      <p>La información sobre calidad del agua en Colombia <strong>ya es pública</strong>, pero:</p>
+      <ul>
+        <li>Está dispersa en múltiples sistemas y documentos</li>
+        <li>A menudo requiere conocimientos técnicos para interpretarla</li>
+        <li>No siempre es fácil de encontrar para ciudadanos sin experiencia navegando portales gubernamentales</li>
+        <li>Los documentos oficiales suelen ser extensos y técnicos</li>
+      </ul>
+      
+      <p style="margin-bottom: 0;"><strong>Agua Clara Colombia</strong> cierra esta brecha organizando, contextualizando y presentando esta información de manera que cualquier persona pueda entenderla y usarla para tomar decisiones informadas.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>📢 ¿Tienes información de tu municipio?</h2>
+    
+    <div class="destacado">
+      <p>Si tienes acceso a certificaciones sanitarias, respuestas oficiales de prestadores o datos del SIVICAP de tu municipio, este proyecto puede ayudar a organizarlos y publicarlos para beneficio de toda la comunidad.</p>
+      
+      <p style="margin-bottom: 0;">El acceso a información clara sobre la calidad del agua es un derecho. Este proyecto facilita ese acceso mediante la organización sistemática de datos oficiales.</p>
+    </div>
   </section>
 
 </main>
