@@ -50,81 +50,118 @@
   </section>
 
   <section>
-    <h2>📚 Fuentes de información</h2>
+  <h2>📚 Fuentes de Información</h2>
+  
+    <h3>Fuentes Primarias</h3>
+    <div class="tarjeta">
+    <ul style="margin-bottom: 0;">
+      <li><strong>Sistema SIVICAP (INS):</strong> Datos consolidados de vigilancia</li>
+      <li><strong>datos.gov.co:</strong> Portal de datos abiertos del gobierno</li>
+      <li><strong>Respuestas a derechos de petición:</strong> Solicitudes formales a prestadores</li>
+      <li><strong>Certificaciones sanitarias:</strong> Documentos oficiales de autoridades departamentales</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>🔍 Proceso de Recopilación</h2>
+  
+  <div class="tarjeta">
+    <h3 style="margin-top: 0;">1. Identificación y Búsqueda</h3>
+    <p>Se consultan portales oficiales, sistemas de información y repositorios públicos</p>
     
+    <h3>2. Solicitud Formal</h3>
+    <p>Cuando la información no está disponible públicamente, se realizan solicitudes formales mediante derecho de petición a las entidades prestadoras y autoridades sanitarias, según Ley 1755 de 2015</p>
+    
+    <h3>3. Verificación y documentación</h3>
+    <p>Toda información se verifica con la fuente original y se documenta
+        con citas específicas. No se incluye información sin respaldo oficial.</p>
+    
+    <h3>4. Organización y Análisis</h3>
+    <p>Se procesan los datos para generar:</p>
+<ul>
+  <li>Comparaciones temporales</li>
+  <li>Agregaciones por zona</li>
+  <li>Descripción de patrones observados</li>
+  <li>Clasificaciones según normativa</li>
+</ul>
+
+    <h3>5. Traducción a lenguaje accesible</h3>
+    <p>Los datos técnicos se explican en términos comprensibles para personas sin formación especializada, manteniendo el rigor de la información.</p>  
+  </div>
+</section>
+
+<section>
+  <h2>📊 Técnicas de Análisis</h2>
+  <div class="tarjeta">
+    <ul>
+      <li><strong>Análisis temporal:</strong> Comparación de IRCA histórico para identificar tendencias</li>
+      <li><strong>Agregación espacial:</strong> Cálculo de promedios rurales/urbanos</li>
+      <li><strong>Clasificación normativa:</strong> Asignación de niveles de riesgo según Resolución 2115</li>
+      <li><strong>Detección de anomalías:</strong> Identificación descriptiva de valores atípicos reportados</li>
+      <li><strong>Metadata derivada:</strong> Generación de indicadores como "% de acueductos sin riesgo"</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Nuevo -->
+
+<section>
+  <h2>📌 Alcance del análisis</h2>
+  <div class="tarjeta">
     <p>
-      La información presentada proviene exclusivamente de:
+      Este proyecto realiza análisis estadístico descriptivo a partir de datos públicos oficiales 
+      (SIVICAP, Ministerio de Salud y otras fuentes institucionales). 
+      No se modifican, reemplazan ni reinterpretan los datos originales.
     </p>
 
-    <div class="tarjeta">
-      <ul style="margin-bottom: 0;">
-        <li><strong>Informes oficiales</strong> de prestadores de servicios de acueducto</li>
-        <li><strong>Reportes de vigilancia sanitaria</strong> de entidades territoriales</li>
-        <li><strong>Documentos públicos</strong> de autoridades de salud (INS, secretarías departamentales)</li>
-        <li><strong>Respuestas a solicitudes</strong> realizadas mediante derecho de petición</li>
-      </ul>
-    </div>
-  </section>
+    <p>
+      Los indicadores presentados corresponden a cálculos derivados 
+      (promedios, comparaciones temporales y clasificaciones normativas) 
+      basados estrictamente en la información reportada por las entidades competentes.
+    </p>
 
-  <section>
-    <h2>✅ Qué hace este proyecto</h2>
+    <p style="margin-bottom: 0;">
+      Agua Clara Colombia no realiza mediciones propias de calidad del agua 
+      ni emite conceptos sanitarios. La clasificación de niveles de riesgo 
+      corresponde exclusivamente a los criterios establecidos en la 
+      Resolución 2115 de 2007 y demás normativa vigente.
+    </p>
+  </div>
+</section>
 
-    <div class="tarjeta tarjeta-exito">
-      <ul style="margin-bottom: 0;">
-        <li>Recopila información pública existente de fuentes oficiales</li>
-        <li>La organiza de forma clara, ordenada y comprensible</li>
-        <li>Traduce documentos técnicos a lenguaje accesible</li>
-        <li>Indica explícitamente qué datos están disponibles y cuáles no</li>
-        <li>Cita todas las fuentes de forma verificable</li>
-      </ul>
-    </div>
-  </section>
+<section>
+  <h2>⚖️ Manejo de Conflictos entre Fuentes</h2>
+  
+  <div class="tarjeta">
+    <p>Cuando diferentes fuentes oficiales reportan valores distintos para el mismo municipio y período, se aplica el siguiente protocolo:</p>
+    
+    <details style="margin-top: 1rem;">
+      <summary style="cursor: pointer; color: var(--color-acento); font-weight: 500; padding: 0.5rem 0;">
+        ¿Por qué hay diferencias entre distintas fuentes?
+      </summary>
+      <div style="margin-top: 1rem; padding-left: 1rem; border-left: 3px solid var(--color-borde);">
+        <p>Es normal encontrar pequeñas variaciones en los valores de IRCA entre diferentes fuentes:</p>
+        <ul>
+          <li><strong>Notificaciones oportunas del INS:</strong> Son reportes preliminares mensuales con cortes específicos (ejemplo: corte al 18-nov-2024). Priorizan velocidad sobre completitud.</li>
+          <li><strong>Datos consolidados (datos.gov.co):</strong> Son datos anuales validados que incluyen correcciones posteriores y datos que llegaron después de los cortes mensuales.</li>
+          <li><strong>Reportes de prestadores:</strong> Pueden reflejar el estado en un momento específico sin incluir eventos puntuales del año completo.</li>
+        </ul>
+        <p style="margin-bottom: 0;">Los valores presentados en esta página corresponden a datos consolidados oficiales, que son más completos y confiables para análisis anuales.</p>
+      </div>
+    </details>
 
-  <section>
-    <h2>❌ Qué NO hace este proyecto</h2>
+    <h3>Criterio de priorización</h3>
+    <ol>
+      <li><strong>datos.gov.co (SIVICAP consolidado):</strong> Se usa como fuente principal para IRCA anual</li>
+      <li><strong>Respuestas de prestadores:</strong> Se usan para detalles operativos, parámetros específicos y contexto local</li>
+      <li><strong>Notificaciones oportunas INS:</strong> Se consideran preliminares y se reemplazan por datos consolidados cuando están disponibles</li>
+    </ol>
 
-    <div class="tarjeta tarjeta-advertencia">
-      <ul style="margin-bottom: 0;">
-        <li>No realiza análisis clínicos propios del agua</li>
-        <li>No realiza mediciones ni toma muestras</li>
-        <li>No interpreta resultados médicos o clínicos</li>
-        <li>No sustituye a las autoridades sanitarias</li>
-        <li>No emite diagnósticos ni recomendaciones médicas</li>
-        <li>No genera información original, solo la organiza</li>
-      </ul>
-    </div>
-  </section>
+    <p style="margin-bottom: 0;"><strong>Transparencia:</strong> Cuando existen diferencias significativas, se explican en la página del municipio correspondiente.</p>
+  </div>
+</section>
 
-  <section>
-    <h2>🔍 Proceso de recopilación</h2>
-
-    <div class="tarjeta">
-      <h3 style="margin-top: 0;">1. Identificación de fuentes</h3>
-      <p>
-        Se consultan sitios web oficiales, plataformas de datos abiertos,
-        informes de gestión y documentos públicos de entidades competentes.
-      </p>
-
-      <h3>2. Solicitud formal de información</h3>
-      <p>
-        Cuando la información no está disponible públicamente, se realizan
-        solicitudes formales mediante derecho de petición a las entidades
-        prestadoras y autoridades sanitarias.
-      </p>
-
-      <h3>3. Verificación y documentación</h3>
-      <p>
-        Toda información se verifica con la fuente original y se documenta
-        con citas específicas. No se incluye información sin respaldo oficial.
-      </p>
-
-      <h3 style="margin-bottom: 0.5rem;">4. Traducción a lenguaje accesible</h3>
-      <p style="margin-bottom: 0;">
-        Los datos técnicos se explican en términos comprensibles para personas
-        sin formación especializada, manteniendo el rigor de la información.
-      </p>
-    </div>
-  </section>
 
   <section>
     <h2>⚠️ Transparencia sobre limitaciones</h2>
@@ -150,42 +187,17 @@
   </section>
 
   <section>
-    <h2>🤝 Principios éticos del proyecto</h2>
-
-    <div class="grid-tarjetas">
-      <div class="tarjeta">
-        <h3 style="margin-top: 0;">Transparencia</h3>
-        <p style="margin-bottom: 0;">
-          Todas las fuentes son citadas y verificables. Los vacíos de información
-          se señalan explícitamente.
-        </p>
-      </div>
-
-      <div class="tarjeta">
-        <h3 style="margin-top: 0;">Rigor</h3>
-        <p style="margin-bottom: 0;">
-          Solo se presenta información respaldada por documentos oficiales.
-          No se hacen afirmaciones sin evidencia.
-        </p>
-      </div>
-
-      <div class="tarjeta">
-        <h3 style="margin-top: 0;">Claridad</h3>
-        <p style="margin-bottom: 0;">
-          La información se presenta en lenguaje accesible, sin sacrificar
-          la precisión técnica.
-        </p>
-      </div>
-
-      <div class="tarjeta">
-        <h3 style="margin-top: 0;">Responsabilidad</h3>
-        <p style="margin-bottom: 0;">
-          Se evita el alarmismo y las conclusiones no verificables.
-          El objetivo es informar, no alarmar.
-        </p>
-      </div>
-    </div>
-  </section>
+  <h2>✅ Criterios de Calidad</h2>
+  <div class="tarjeta tarjeta-exito">
+    <p>Un dato se incluye en la web solo si cumple:</p>
+    <ul>
+      <li>Proviene de fuente oficial verificable</li>
+      <li>Tiene fecha de emisión/reporte clara</li>
+      <li>Es coherente con el marco normativo vigente</li>
+      <li>Puede ser citado con documento de respaldo</li>
+    </ul>
+  </div>
+</section>
 
   <section>
     <h2>📊 Sobre el IRCA</h2>
@@ -232,15 +244,18 @@
   <div class="footer-contenido">
     <p><strong>Agua Clara Colombia</strong> - Proyecto independiente de información pública</p>
     <p>La información presentada proviene de fuentes oficiales verificables.</p>
-  </div>
-  <p style="margin-top: 0.75rem; font-size: 0.8rem;">
-      © Agua Clara Colombia · 
-      <a href="https://creativecommons.org/licenses/by/4.0/deed.es" 
-         target="_blank" rel="noopener">
-        CC BY 4.0
-      </a>
+    <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+      Análisis estadístico descriptivo realizado exclusivamente sobre datos públicos oficiales.
     </p>
   </div>
+
+  <p style="margin-top: 0.75rem; font-size: 0.8rem;">
+    © Agua Clara Colombia · 
+    <a href="https://creativecommons.org/licenses/by/4.0/deed.es" 
+       target="_blank" rel="noopener">
+      CC BY 4.0
+    </a>
+  </p>
 </footer>
 
 </body>
