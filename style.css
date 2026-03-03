@@ -560,3 +560,15 @@ footer {
     color: black;
   }
 }
+
+.nota-metodologica {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background-color: #f3f4f6;
+  border-left: 4px solid #2563eb;
+  font-size: 0.95rem;
+}
+
+.nota-metodologica h2 {
+  margin-top: 0;
+}
